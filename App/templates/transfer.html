@@ -1,0 +1,18 @@
+{% extends 'main.html' %}
+{% block content %}
+<section class="maincss">
+    <h1>TRASFER ACCOUNT TO ACCOUNT</h1>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <label for="acc">FROM ACCOUNT</label>
+        <input type="number" name="acc1" id="">
+        <label for="acc">TO ACCOUNT</label>
+        <input type="number" name="acc2" id="">
+        <label for="pin">PIN</label>
+        <input type="password" name="pin" id="">
+        <label for="amount">AMOUNT</label>
+        <input type="number" name="amount" id="">
+        <button type="submit">Transfer</button>
+    </form>
+</section>
+{% endblock content %}

@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Bungee+Tint&display=swap');
+
+.nav{
+    /* border: 2px solid red; */
+    height: 210px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+    box-shadow: 0 0 10px black;
+}
+.nav img{
+    /* border: 2px solid blue; */
+    height: 32vh;
+    width: 32vh;
+}
+
+#navaside2 h1{
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "Bungee Spice", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+      
+}
+
+#navaside2 p {
+    font-size: 50px;
+    font-weight: 700;
+    font-family: "Bungee Tint", sans-serif;
+    font-style: normal;
+      
+}

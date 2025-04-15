@@ -1,0 +1,18 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<section class="maincss">
+    <h1>Pin Generation</h1>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <label for="">ACCOUNT NUMBER</label>
+        <input type="number" name="acc" id="">
+        <label for="">PIN</label>
+        <input type="number" name="pin1" id="">
+        <label for="">CONFORM PIN</label>
+        <input type="number" name="pin2" id="">
+        <button type="submit">GENERATE OTP</button>
+    </form>
+    
+</section>
+{% endblock content %}

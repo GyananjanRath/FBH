@@ -1,0 +1,21 @@
+div{
+    border: 2px solid;
+    height: 180px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+div img{
+    /* border: 2px solid red; */
+    height: 160px;
+    width: 160px;
+    
+}
+
+div img:hover{
+    filter: drop-shadow(0 0 1ef0px #3cff00) drop-shadow(0 0 30px #3cff00);
+    
+}

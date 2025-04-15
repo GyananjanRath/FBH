@@ -1,0 +1,16 @@
+{% extends 'main.html' %}
+{% block content %}
+<section class="maincss">
+    <h1>Withdrawl</h1>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <label for="">ACCOUNT NUMBER</label>
+        <input type="number" name="acc" id="">
+        <label for="">PIN</label>
+        <input type="password" name="pin" id="">
+        <label for="">AMOUNT</label>
+        <input type="number" name="amt" id="">
+        <button type="submit">WITHDRAW</button>
+    </form>
+</section>
+{% endblock content %}
