@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+
+/* .nav_main_container {
+    position: fixed;
+    z-index: 99;
+    height: 120px;
+    width: 100vw;
+    background: linear-gradient(to right, #0ad96eea, #2acfbcda);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    padding: 0 2%;
+  } */
+  .nav_main_container {
+    position: fixed;
+    z-index: 99;
+    height: 120px;
+    width: 100vw;
+    /* background: linear-gradient(to right, #0ad96eea, #2acfbcda); */
+    /* background: linear-gradient(to right, #00c6ff, #0072ff); */
+    background: linear-gradient(270deg, #00f0ff, #007cf0);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    padding: 0 2%;
+    
+    /* 3D Effects */
+    transform: perspective(1000px) rotateX(2deg);
+    transform-style: preserve-3d;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow:
+        0 4px 6px rgba(0, 0, 0, 0.1),
+        0 10px 15px rgba(0, 0, 0, 0.1),
+        inset 0 -1px 3px rgba(255, 255, 255, 0.2);
+}
+
+  
+  .nav_container {
+    height: inherit;
+    width: 30%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+  }
+  
+  .right_nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    text-align: left;
+    padding-left: 20px;
+  }
+  
+  .right_nav h1 {
+    font-family: "Bungee Spice", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: x-large;
+  }
+  
+  .right_nav p {
+    /* border: 2px solid; */
+    width: 320px;
+    font-family: "Bungee Tint", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: xx-large;
+    white-space: none;
+  }
+  
+  .left_nav {
+    height: inherit;
+    width: calc(100%-70%);
+  }
+  
+  .left_nav img {
+    height: 100%;
+    border-radius: 50%;
+  }

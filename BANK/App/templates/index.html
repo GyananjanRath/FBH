@@ -1,0 +1,13 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+<br><br><br><br><br><br><br>
+<div>
+    <a href="{% url 'create' %}"><img src="{% static 'image/account.png' %}" alt="" class="images"></a>
+    <a href="{% url 'pin' %}"><img src="{% static 'image/PinGeneration.png' %}" alt="" class="images"></a>
+    <a href="{% url 'bal' %}"><img src="{% static 'image/wallet.png' %}" alt="" class="images"></a>
+    <a href="{% url 'withdrawl' %}"><img src="{% static 'image/cash-withdrawal.png' %}" alt="" class="images"></a>
+    <a href="{% url 'deposit' %}"><img src="{% static 'image/hand.png' %}" alt="" class="images"></a>
+    <a href="{% url 'transfer' %}"><img src="{% static 'image/transference.png' %}" alt="" class="images"></a>
+</div>
+{% endblock content%}

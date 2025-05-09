@@ -1,0 +1,21 @@
+{% extends 'main.html' %}
+{% block content %}
+<br><br><br><br><br><br>
+<section class="maincss">
+    <h1>TRASFER ACCOUNT TO ACCOUNT</h1>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <label for="acc">FROM ACCOUNT</label>
+        <input type="number" name="acc1" id="" placeholder="Enter Your Account Number">
+        <label for="acc">TO ACCOUNT</label>
+        <input type="number" name="acc2" id="" placeholder="Enter Receiver's Account Number">
+        <label for="pin">PIN</label>
+        <input type="password" name="pin" id="" placeholder="Enter Your Pin">
+        <label for="amount">AMOUNT</label>
+        <input type="number" name="amount" id="" placeholder="Enter The Amount">
+        <button type="submit">Transfer</button>
+    </form>
+    <br><br><br>
+</section>
+
+{% endblock content %}

@@ -1,0 +1,23 @@
+{% extends 'main.html' %}
+{% block content %}
+<br><br><br><br><br><br>
+{% if var %}
+<h1>The Balance is : {{bal}}</h1>
+{% else %}
+<section class="maincss">
+    <h1>Check Balance</h1>
+    <form action="" method="POST">
+        {%csrf_token%}
+        <label for="">ACCOUNT NUMBER</label>
+        <input type="number" name="acc" id="" placeholder="Enter the Account Number">
+        <label for="">PIN</label>
+        <input type="number" name="pin" id="" maxlength="4" placeholder="Enter the Pin">
+        <button type="submit">CHECK BALANCE</button>
+    </form>
+    <br><br><br>
+</section>
+{% endif %}
+
+{{msg}}
+
+{% endblock content %}

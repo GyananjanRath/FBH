@@ -1,0 +1,20 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<br><br><br><br><br><br>
+<section class="maincss">
+    <h1>Pin Generation</h1>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <label for="">ACCOUNT NUMBER</label>
+        <input type="number" name="acc" id="" placeholder="Enter Your Account Number">
+        <label for="">PIN</label>
+        <input type="number" name="pin1" id=""  placeholder="Enter Your Pin">
+        <label for="">CONFORM PIN</label>
+        <input type="number" name="pin2" id=""  placeholder="ReEnter the Pin">
+        <button type="submit">GENERATE OTP</button>
+    </form>
+    <br><br><br>
+</section>
+
+{% endblock content %}
